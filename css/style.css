@@ -167,6 +167,7 @@ body {
 
 .main-sec2-blog h1 {
     font-size: 35px;
+    border-left: 4px solid #FF900E;
 }
 
 .main-sec2-blog p {
@@ -194,7 +195,19 @@ body {
 .main-sec2-image img {
     width: 100%;
 }
-
+.main-sec2-image h1{
+    color: #fff;
+    background-color: #FF900E;
+    padding: 40px 50px;
+    display: inline-block;
+    border-radius: 5px;
+    margin-left: -50px;
+    margin-top: -100px;
+    font-size: 35px;
+}
+.main-sec2-image p{
+    font-size: 20px;
+}
 /* main section end */
 
 
