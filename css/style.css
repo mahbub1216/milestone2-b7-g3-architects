@@ -266,7 +266,7 @@ body {
     color: rgb(122, 121, 121);
 }
 .client-info{
-    background-image:linear-gradient(45deg,skyblue 0%,white 100%);
+    background: skyblue;
     padding: 50px;
     text-align: center;
 }
