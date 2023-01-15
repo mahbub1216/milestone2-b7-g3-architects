@@ -19,6 +19,7 @@ body {
 .header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: 100%;
     max-width: 80%;
     margin: 0 auto;
@@ -33,6 +34,7 @@ body {
 
 .header nav ul {
     display: flex;
+    align-items: center;
     gap: 45px;
 }
 
@@ -231,17 +233,26 @@ body {
 .box-wrap {
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
 }
 
 .box {
     border: 2px solid #FF900E;
-    border-radius: 5px;
+    border-radius: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
+    transition: width 2s, height 2s, transform 2s;
+}
+
+.box:hover {
+    background-color: #FF900E;
+    width: 250px;
+    height: 250px;
+    transform: rotate(360deg);
 }
 
 .box img {}
@@ -276,6 +287,7 @@ body {
 .footer nav ul {
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
 }
 
 .footer nav ul li {
@@ -302,8 +314,10 @@ body {
 @media screen and (max-width: 576px) {
 
     .header,
-    .footer nav ul {
+    .footer nav ul,
+    .box-wrap{
         flex-direction: column;
+        flex-wrap: wrap;
         text-align: center;
         line-height: 30px;
     }
@@ -329,23 +343,18 @@ body {
     }
 
     .main-sec2-blog {
-        width: 90%;
+        width: 100%;
     }
 
     .main-sec2-image {
-        width: 90%;
+        width: 100%;
     }
 
     .some-facts {
         padding: 0px;
     }
 
-    .box-wrap {
-        flex-direction: column;
-    }
-
     .box {
-        width: 90%;
-        margin: auto;
+        margin-bottom: 20px;
     }
 }
