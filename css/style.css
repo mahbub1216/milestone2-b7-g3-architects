@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Work Sans', sans-serif;
+}
+
+
+/* header start */
+.header-wrap{
+    background: rgba(255, 144, 14, 0.1);
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+.header h2{
+    font-size: 35px;
+}
+.header nav{}
+.header nav ul {
+    display: flex;
+    gap: 45px;
+}
+.header nav ul li{
+    list-style: none; 
+}
+.header nav ul li a{
+    text-decoration: none;
+    color: #393939;
+    font-size: 14px;
+    font-weight: 500;
+}
+.header nav ul li a:hover{
+    color: #ff8800;
+
+}
+.banner{
+    text-align: center;
+}
+.banner-title h1{
+    font-size: 50px;
+    margin: 50px 0 20px 0;
+}
+.banner-title{
+    text-align: center;
+    width: 50%;
+    margin: auto;
+}
+.banner-title small{
+    color: rgb(67, 67, 67);
+}
+.banner-title button{
+    padding: 15px 20px;
+    border-radius: 5px;
+    background: #FF900E;
+    border: none;
+    margin: 30px 0 35px 0;
+    font-weight: 600;
+    color: #fff;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+.banner img{
+    width: 80%;
+    padding-bottom: 30px;
+}
+/* header end */
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 576px){
+    .header{
+        flex-direction: column;
+        text-align: center;
+        line-height: 30px;
+    }
+    .header nav ul{
+        display: inherit;
+    }
+}
